@@ -21,7 +21,7 @@ import com.koreait.dao.MybatisDAO;
 import com.koreait.vo.InterestVO;
 import com.koreait.vo.MemberVO;
 
-
+// 커밋 테스트
 @Controller
 public class HomeController {
 	
