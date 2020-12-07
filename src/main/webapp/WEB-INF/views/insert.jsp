@@ -8,19 +8,19 @@
 <body>
 
 <% 
-String id = request.getParameter("id");
-out.println(id);
-
-String password = request.getParameter("password");
-out.println(password);
-
-String gender = request.getParameter("gender");
-out.println(gender);
-
-String[] interests = request.getParameterValues("interests_list");
-for (int i = 0; i < interests.length; i++){
-	out.print(interests[i] + " ");
-}
+	String id = request.getParameter("id");
+	out.println(id);
+	
+	String password = request.getParameter("password");
+	out.println(password);
+	
+	String gender = request.getParameter("gender");
+	out.println(gender);
+	
+	String[] interests = request.getParameterValues("interests_list");
+	for (int i = 0; i < interests.length; i++){
+		out.print(interests[i] + " ");
+	}
 
 %>
 

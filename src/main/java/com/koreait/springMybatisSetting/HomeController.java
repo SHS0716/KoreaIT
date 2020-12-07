@@ -40,8 +40,29 @@ public class HomeController {
 	@RequestMapping("/login")
 	public String login(HttpServletRequest request, Model model) {
 		System.out.println("컨트롤러의 login() 메소드 실행");
+		return "loginOK";
+	}
+	
+	@RequestMapping("/loginOK")
+	public String loginOK(HttpServletRequest request, Model model) {
+		System.out.println("컨트롤러의 loginOK() 메소드 실행");
+		MybatisDAO mapper = sqlSession.getMapper(MybatisDAO.class);
+		
+		String id = request.getParameter("id");
+		String password = request.getParameter("password");
+		
+		int result = mapper.idchk(id);
+		if(result == 0) {
+			return "loginfail";
+		} else {
+			
+		}
+		
+		
 		return "list";
 	}
+	
+	
 	
 	@RequestMapping("/join")
 	public String join(HttpServletRequest request, Model model) {

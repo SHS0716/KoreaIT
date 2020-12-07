@@ -9,4 +9,7 @@ public interface MybatisDAO {
 
 	void insertlist(InterestVO interestVO);
 
+	int idchk(String id);
+
+
 }

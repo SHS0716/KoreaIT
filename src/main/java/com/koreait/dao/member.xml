@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.koreait.dao.MybatisDAO">
-
+	
+	<!-- 회원가입 -->
 	<insert id="insert" parameterType="com.koreait.vo.MemberVO">
 		insert into member (idx, id, password, name, gender, dateofbirthday, email, phone)
 		values (member_idx_seq.nextval, #{id}, #{password}, #{name}, #{gender}, #{dateofbirthday}, #{email}, #{phone})
 	</insert>
 	
-	
+	<!-- 회원가입시 관심분야 저장 -->
 	<insert id="insertlist" parameterType="com.koreait.vo.InterestVO">
 		insert into interlist (interidx, id, interests) values (interlist_interidx_seq.nextval, #{id}, #{interests})
 	</insert>
+	
+	<!-- ID 조회 -->
+	<select id="idchk" parameterType="String" resultType="int">
+		select count(*) from member where id = #{id}
+	</select>
 </mapper>
 
 
