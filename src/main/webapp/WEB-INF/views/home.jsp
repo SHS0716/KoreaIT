@@ -17,10 +17,9 @@
 </head>
 <body>
 
-
 <div id="login">
 	<h2>코리아IT 커뮤니티</h2>
-	<form action="login" method="post">
+	<form action="loginOK" method="post">
 		ID : <input type="text" name="id" placeholder="ID"/><br>
 		PW : <input type="text" name="id" placeholder="PASSWORD"/><br>
 		<div id="in">

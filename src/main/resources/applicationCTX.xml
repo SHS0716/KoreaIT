@@ -3,9 +3,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
-	<!-- VO bean 생성 -->
+	<!-- bean 생성 -->
 	<bean id="memberVO" class="com.koreait.vo.MemberVO"/>
 	<bean id="interestVO" class="com.koreait.vo.InterestVO"/>
+	<bean id="boardVO" class="com.koreait.vo.BoardVO"/>
+	<bean id="boardList" class="com.koreait.vo.BoardList"/>
 	
 
 

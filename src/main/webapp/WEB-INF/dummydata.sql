@@ -1,16 +1,16 @@
 --MEMBER 테이블
-insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'hong', '홍길동', '1111', '남자', '19930716', 'hong@naver.com', '01088179307');
-insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'lim', '임꺽정', '2222', '여자', '19950419', 'lim@gmail.com', '01026811007');
-insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'jang', '장길산', '3333', '남자', '19900127', 'jang@nate.com', '01033333333');
-insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'li123', '일지매', '4444', '여자', '19910111', 'il123@gmail.com', '01044444444');
-insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'sonheungmin', '손흥민', '5555', '남자', '19920708', 'sontot@gmail.com', '01055555555');
-insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'park', '박용택', '6666', '남자', '19800202', 'yongtaek', '010666666666');
-insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'seojanghoon', '서장훈', '7777', '남자', '19780925', 'seo@gmail.com', '01077777777');
-insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'gpark', '박명수', '5555', '남자', '19920708', 'gpark@gmail.com', '01088888888');
-insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'maeddugi', '유재석', '5555', '남자', '19920708', 'youjaesuk@gmail.com', '01099999999');
-insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'gang', '강호동', '5555', '남자', '19920708', 'hodong@gmail.com', '01012341234');
-insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'jessi', '제시', '5555', '여', '19920507', 'jessisexy@gmail.com', '01023452345');
-insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'harrykane', '해리케인', '5555', '남자', '19920728', 'kandgod@gmail.com', '01074567777');
+insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'hong', '1111', '홍길동', '남자', '19930716', 'hong@naver.com', '01088179307');
+insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'lim', '2222', '임꺽정', '여자', '19950419', 'lim@gmail.com', '01026811007');
+insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'jang', '3333', '장길산', '남자', '19900127', 'jang@nate.com', '01033333333');
+insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'li123', '4444', '일지매', '여자', '19910111', 'il123@gmail.com', '01044444444');
+insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'sonheungmin', '5555', '손흥민', '남자', '19920708', 'sontot@gmail.com', '01055555555');
+insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'park', '6666', '박용택', '남자', '19800202', 'yongtaek', '010666666666');
+insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'seojanghoon', '7777', '서장훈', '남자', '19780925', 'seo@gmail.com', '01077777777');
+insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'gpark', '8888', '박명수', '남자', '19920708', 'gpark@gmail.com', '01088888888');
+insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'maeddugi', '9999', '유재석', '남자', '19920708', 'youjaesuk@gmail.com', '01099999999');
+insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'gang', '0000', '강호동', '남자', '19920708', 'hodong@gmail.com', '01012341234');
+insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'jessi', '1111', '제시', '여', '19920507', 'jessisexy@gmail.com', '01023452345');
+insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'harrykane','1212', '해리케인', '남자', '19920728', 'kandgod@gmail.com', '01074567777');
 
 --INTERLIST 테이블
 insert into interlist (interidx, id, interests) values (interlist_interidx_seq.nextval, 'hong', '사회');
@@ -85,3 +85,6 @@ insert into interlist (interidx, id, interests) values (interlist_interidx_seq.n
 insert into interlist (interidx, id, interests) values (interlist_interidx_seq.nextval, 'harrykane', 'IT');
 insert into interlist (interidx, id, interests) values (interlist_interidx_seq.nextval, 'harrykane', '게임');
 insert into interlist (interidx, id, interests) values (interlist_interidx_seq.nextval, 'harrykane', '쇼핑');
+
+--BOARD 테이블
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '홍길동', '사회', '1', '코로나', '너무 싫어요', 0, 0);

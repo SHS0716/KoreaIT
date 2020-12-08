@@ -17,6 +17,27 @@
 	<select id="idchk" parameterType="String" resultType="int">
 		select count(*) from member where id = #{id}
 	</select>
+	
+	<!-- 글쓰기 -->
+	<insert id="write" parameterType="com.koreait.vo.BoardVO">
+		insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, #{name}, #{category}, #{ref}, #{subject}, #{content}, 0, 0)
+	</insert>
+	
+	<!-- 사회게시판 글 개수 조회 -->
+	<select id="newestCount" resultType="int">
+		select count(*) from board where ref = 1
+	</select>
+	
+	<!-- 사회게시판 1페이지 분량의 글 목록을 얻어온다. -->
+		<select id="newestList" parameterType="java.util.HashMap" resultType="com.koreait.vo.BoardVO">
+		<![CDATA[
+			select * from (
+				select rownum rnum, GG.* from (
+					select * from board where ref = 1 order by bidx desc
+				) GG where rownum <= #{endNo}
+			) where rnum >= #{startNo}
+		]]>
+	</select>
 </mapper>
 
 
