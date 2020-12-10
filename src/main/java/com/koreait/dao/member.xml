@@ -13,9 +13,13 @@
 		insert into interlist (interidx, id, interests) values (interlist_interidx_seq.nextval, #{id}, #{interests})
 	</insert>
 	
-	<!-- ID 조회 -->
-	<select id="idchk" parameterType="String" resultType="int">
+	<!-- Login ID, PW 확인 -->
+	<select id="login_id" resultType="int">
 		select count(*) from member where id = #{id}
+	</select>
+	
+	<select id="login_pw" parameterType="String" resultType="String">
+		select password from member where id = #{id}
 	</select>
 	
 	<!-- 글쓰기 -->
@@ -23,13 +27,13 @@
 		insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, #{name}, #{category}, #{ref}, #{subject}, #{content}, 0, 0)
 	</insert>
 	
-	<!-- 사회게시판 글 개수 조회 -->
-	<select id="newestCount" resultType="int">
+	<!-- 사회 게시판 글 개수 조회 -->
+	<select id="socailCount" resultType="int">
 		select count(*) from board where ref = 1
 	</select>
 	
-	<!-- 사회게시판 1페이지 분량의 글 목록을 얻어온다. -->
-		<select id="newestList" parameterType="java.util.HashMap" resultType="com.koreait.vo.BoardVO">
+	<!-- 사회 게시판 1페이지 분량의 글 목록을 얻어온다. -->
+		<select id="socailList" parameterType="java.util.HashMap" resultType="com.koreait.vo.BoardVO">
 		<![CDATA[
 			select * from (
 				select rownum rnum, GG.* from (
@@ -38,6 +42,115 @@
 			) where rnum >= #{startNo}
 		]]>
 	</select>
+	
+	<!-- 연예 게시판 글 개수 조회 -->
+	<select id="enterCount" resultType="int">
+		select count(*) from board where ref = 2
+	</select>
+	
+	<!-- 연예 게시판 1페이지 분량의 글 목록을 얻어온다. -->
+		<select id="enterList" parameterType="java.util.HashMap" resultType="com.koreait.vo.BoardVO">
+		<![CDATA[
+			select * from (
+				select rownum rnum, GG.* from (
+					select * from board where ref = 2 order by bidx desc
+				) GG where rownum <= #{endNo}
+			) where rnum >= #{startNo}
+		]]>
+	</select>
+	
+	<!-- 스포츠 게시판 글 개수 조회 -->
+	<select id="sportsCount" resultType="int">
+		select count(*) from board where ref = 3
+	</select>
+	
+	<!-- 스포츠 게시판 1페이지 분량의 글 목록을 얻어온다. -->
+		<select id="sportsList" parameterType="java.util.HashMap" resultType="com.koreait.vo.BoardVO">
+		<![CDATA[
+			select * from (
+				select rownum rnum, GG.* from (
+					select * from board where ref = 3 order by bidx desc
+				) GG where rownum <= #{endNo}
+			) where rnum >= #{startNo}
+		]]>
+	</select>
+	
+	<!-- IT 게시판 글 개수 조회 -->
+	<select id="ITCount" resultType="int">
+		select count(*) from board where ref = 4
+	</select>
+	
+	<!-- IT 게시판 1페이지 분량의 글 목록을 얻어온다. -->
+		<select id="ITList" parameterType="java.util.HashMap" resultType="com.koreait.vo.BoardVO">
+		<![CDATA[
+			select * from (
+				select rownum rnum, GG.* from (
+					select * from board where ref = 4 order by bidx desc
+				) GG where rownum <= #{endNo}
+			) where rnum >= #{startNo}
+		]]>
+	</select>
+	
+	<!-- 게임 게시판 글 개수 조회 -->
+	<select id="gameCount" resultType="int">
+		select count(*) from board where ref = 5
+	</select>
+	
+	<!-- 게임 게시판 1페이지 분량의 글 목록을 얻어온다. -->
+		<select id="gameList" parameterType="java.util.HashMap" resultType="com.koreait.vo.BoardVO">
+		<![CDATA[
+			select * from (
+				select rownum rnum, GG.* from (
+					select * from board where ref = 5 order by bidx desc
+				) GG where rownum <= #{endNo}
+			) where rnum >= #{startNo}
+		]]>
+	</select>
+	
+	<!-- 쇼핑 게시판 글 개수 조회 -->
+	<select id="shoppingCount" resultType="int">
+		select count(*) from board where ref = 6
+	</select>
+	
+	<!-- 쇼핑 게시판 1페이지 분량의 글 목록을 얻어온다. -->
+		<select id="shoppingList" parameterType="java.util.HashMap" resultType="com.koreait.vo.BoardVO">
+		<![CDATA[
+			select * from (
+				select rownum rnum, GG.* from (
+					select * from board where ref = 6 order by bidx desc
+				) GG where rownum <= #{endNo}
+			) where rnum >= #{startNo}
+		]]>
+	</select>
+	
+	<!-- 자유 게시판 글 개수 조회 -->
+	<select id="freeCount" resultType="int">
+		select count(*) from board where ref = 7
+	</select>
+	
+	<!-- 자유 게시판 1페이지 분량의 글 목록을 얻어온다. -->
+		<select id="freeList" parameterType="java.util.HashMap" resultType="com.koreait.vo.BoardVO">
+		<![CDATA[
+			select * from (
+				select rownum rnum, GG.* from (
+					select * from board where ref = 7 order by bidx desc
+				) GG where rownum <= #{endNo}
+			) where rnum >= #{startNo}
+		]]>
+	</select>
+	
+	<!-- 조회수 증가 -->
+	<update id="increment" parameterType="int">
+		update board set hit = hit + 1 where bidx = #{bidx}
+	</update>
+
+	<!-- 글 1건을 조회한다. -->
+	
+	<select id="selectBybidx" parameterType="int" resultType="com.koreait.vo.BoardVO">
+		select * from board where bidx = #{bidx}
+	</select>
+
+	
 </mapper>
 
 

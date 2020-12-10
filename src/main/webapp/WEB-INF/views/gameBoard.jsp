@@ -24,7 +24,7 @@
 <body>
 
 <table width="1000" align="center" border="1" cellpadding="5" cellspacing="0">
-	<tr><th colspan="5">인기글 게시판</th></tr>
+	<tr><th colspan="5">게임 게시판</th></tr>
 	<tr>
 		<td colspan="5" align="right">
 			${boardList.totalCount}(${boardList.currentPage} / ${boardList.totalPage})Page

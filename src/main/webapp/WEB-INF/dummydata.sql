@@ -9,7 +9,7 @@ insert into member (idx, id, password, name, gender, dateofbirthday, email, phon
 insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'gpark', '8888', '박명수', '남자', '19920708', 'gpark@gmail.com', '01088888888');
 insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'maeddugi', '9999', '유재석', '남자', '19920708', 'youjaesuk@gmail.com', '01099999999');
 insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'gang', '0000', '강호동', '남자', '19920708', 'hodong@gmail.com', '01012341234');
-insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'jessi', '1111', '제시', '여', '19920507', 'jessisexy@gmail.com', '01023452345');
+insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'jessi', '1111', '제시', '여자', '19920507', 'jessisexy@gmail.com', '01023452345');
 insert into member (idx, id, password, name, gender, dateofbirthday, email, phone) values (member_idx_seq.nextval, 'harrykane','1212', '해리케인', '남자', '19920728', 'kandgod@gmail.com', '01074567777');
 
 --INTERLIST 테이블
@@ -87,4 +87,93 @@ insert into interlist (interidx, id, interests) values (interlist_interidx_seq.n
 insert into interlist (interidx, id, interests) values (interlist_interidx_seq.nextval, 'harrykane', '쇼핑');
 
 --BOARD 테이블
-insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '홍길동', '사회', '1', '코로나', '너무 싫어요', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '홍길동', '사회', '1', '사회-코로나1', '너무 싫어요1', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '임꺽정', '사회', '1', '사회-코로나2', '너무 싫어요2', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '장길산', '사회', '1', '사회-코로나3', '너무 싫어요3', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '일지매', '사회', '1', '사회-코로나4', '너무 싫어요4', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '손흥민', '사회', '1', '사회-코로나5', '너무 싫어요5', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '박용택', '사회', '1', '사회-코로나6', '너무 싫어요6', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '서장훈', '사회', '1', '사회-코로나7', '너무 싫어요7', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '박명수', '사회', '1', '사회-코로나8', '너무 싫어요8', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '유재석', '사회', '1', '사회-코로나9', '너무 싫어요9', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '강호동', '사회', '1', '사회-코로나10', '너무 싫어요10', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '제시', '사회', '1', '사회-코로나11', '너무 싫어요11', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '해리케인', '사회', '1', '사회-코로나12', '너무 싫어요12', 0, 0);
+
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '홍길동', '연예', '2', '연예-코로나1', '너무 싫어요1', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '임꺽정', '연예', '2', '연예-코로나2', '너무 싫어요2', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '장길산', '연예', '2', '연예-코로나3', '너무 싫어요3', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '일지매', '연예', '2', '연예-코로나4', '너무 싫어요4', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '손흥민', '연예', '2', '연예-코로나5', '너무 싫어요5', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '박용택', '연예', '2', '연예-코로나6', '너무 싫어요6', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '서장훈', '연예', '2', '연예-코로나7', '너무 싫어요7', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '박명수', '연예', '2', '연예-코로나8', '너무 싫어요8', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '유재석', '연예', '2', '연예-코로나9', '너무 싫어요9', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '강호동', '연예', '2', '연예-코로나10', '너무 싫어요10', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '제시', '연예', '2', '연예-코로나11', '너무 싫어요11', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '해리케인', '연예', '2', '연예-코로나12', '너무 싫어요12', 0, 0);
+
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '홍길동', '스포츠', '3', '스포츠-코로나1', '너무 싫어요1', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '임꺽정', '스포츠', '3', '스포츠-코로나2', '너무 싫어요2', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '장길산', '스포츠', '3', '스포츠-코로나3', '너무 싫어요3', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '일지매', '스포츠', '3', '스포츠-코로나4', '너무 싫어요4', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '손흥민', '스포츠', '3', '스포츠-코로나5', '너무 싫어요5', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '박용택', '스포츠', '3', '스포츠-코로나6', '너무 싫어요6', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '서장훈', '스포츠', '3', '스포츠-코로나7', '너무 싫어요7', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '박명수', '스포츠', '3', '스포츠-코로나8', '너무 싫어요8', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '유재석', '스포츠', '3', '스포츠-코로나9', '너무 싫어요9', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '강호동', '스포츠', '3', '스포츠-코로나10', '너무 싫어요10', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '제시', '스포츠', '3', '스포츠-코로나11', '너무 싫어요11', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '해리케인', '스포츠', '3', '스포츠-코로나12', '너무 싫어요12', 0, 0);
+
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '홍길동', 'IT', '4', 'IT-코로나1', '너무 싫어요1', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '임꺽정', 'IT', '4', 'IT-코로나2', '너무 싫어요2', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '장길산', 'IT', '4', 'IT-코로나3', '너무 싫어요3', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '일지매', 'IT', '4', 'IT-코로나4', '너무 싫어요4', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '손흥민', 'IT', '4', 'IT-코로나5', '너무 싫어요5', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '박용택', 'IT', '4', 'IT-코로나6', '너무 싫어요6', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '서장훈', 'IT', '4', 'IT-코로나7', '너무 싫어요7', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '박명수', 'IT', '4', 'IT-코로나8', '너무 싫어요8', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '유재석', 'IT', '4', 'IT-코로나9', '너무 싫어요9', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '강호동', 'IT', '4', 'IT-코로나10', '너무 싫어요10', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '제시', 'IT', '4', 'IT-코로나11', '너무 싫어요11', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '해리케인', 'IT', '4', 'IT-코로나12', '너무 싫어요12', 0, 0);
+
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '홍길동', '게임', '5', '게임-코로나1', '너무 싫어요1', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '임꺽정', '게임', '5', '게임-코로나2', '너무 싫어요2', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '장길산', '게임', '5', '게임-코로나3', '너무 싫어요3', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '일지매', '게임', '5', '게임-코로나4', '너무 싫어요4', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '손흥민', '게임', '5', '게임-코로나5', '너무 싫어요5', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '박용택', '게임', '5', '게임-코로나6', '너무 싫어요6', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '서장훈', '게임', '5', '게임-코로나7', '너무 싫어요7', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '박명수', '게임', '5', '게임-코로나8', '너무 싫어요8', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '유재석', '게임', '5', '게임-코로나9', '너무 싫어요9', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '강호동', '게임', '5', '게임-코로나10', '너무 싫어요10', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '제시', '게임', '5', '게임-코로나11', '너무 싫어요11', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '해리케인', '게임', '5', '게임-코로나12', '너무 싫어요12', 0, 0);
+
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '홍길동', '쇼핑', '6', '쇼핑-코로나1', '너무 싫어요1', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '임꺽정', '쇼핑', '6', '쇼핑-코로나2', '너무 싫어요2', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '장길산', '쇼핑', '6', '쇼핑-코로나3', '너무 싫어요3', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '일지매', '쇼핑', '6', '쇼핑-코로나4', '너무 싫어요4', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '손흥민', '쇼핑', '6', '쇼핑-코로나5', '너무 싫어요5', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '박용택', '쇼핑', '6', '쇼핑-코로나6', '너무 싫어요6', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '서장훈', '쇼핑', '6', '쇼핑-코로나7', '너무 싫어요7', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '박명수', '쇼핑', '6', '쇼핑-코로나8', '너무 싫어요8', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '유재석', '쇼핑', '6', '쇼핑-코로나9', '너무 싫어요9', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '강호동', '쇼핑', '6', '쇼핑-코로나10', '너무 싫어요10', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '제시', '쇼핑', '6', '쇼핑-코로나11', '너무 싫어요11', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '해리케인', '쇼핑', '6', '쇼핑-코로나12', '너무 싫어요12', 0, 0);
+
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '홍길동', '자유', '7', '자유-코로나1', '너무 싫어요1', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '임꺽정', '자유', '7', '자유-코로나2', '너무 싫어요2', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '장길산', '자유', '7', '자유-코로나3', '너무 싫어요3', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '일지매', '자유', '7', '자유-코로나4', '너무 싫어요4', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '손흥민', '자유', '7', '자유-코로나5', '너무 싫어요5', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '박용택', '자유', '7', '자유-코로나6', '너무 싫어요6', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '서장훈', '자유', '7', '자유-코로나7', '너무 싫어요7', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '박명수', '자유', '7', '자유-코로나8', '너무 싫어요8', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '유재석', '자유', '7', '자유-코로나9', '너무 싫어요9', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '강호동', '자유', '7', '자유-코로나10', '너무 싫어요10', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '제시', '자유', '7', '자유-코로나11', '너무 싫어요11', 0, 0);
+insert into board (bidx, name, category, ref, subject, content, hit, replycnt) values (board_bidx_seq.nextval, '해리케인', '자유', '7', '자유-코로나12', '너무 싫어요12', 0, 0);

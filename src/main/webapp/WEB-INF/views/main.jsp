@@ -40,14 +40,14 @@
 		<!-- 리스트 -->
 		<div class="list_start">
 			<div class="list_detail" onclick="location.href='newestBoard'"><p>최신글 게시판</p></div>
-			<div class="list_detail"><p>인기글 게시판</p></div>
-			<div class="list_detail"><p>자유 게시판</p></div>
-			<div class="list_detail"><p>사회</p></div>
-			<div class="list_detail"><p>연예</p></div>
-			<div class="list_detail"><p>스포츠</p></div>
-			<div class="list_detail"><p>IT</p></div>
-			<div class="list_detail"><p>게임</p></div>
-			<div class="list_detail"><p>쇼핑</p></div>
+			<div class="list_detail" onclick="location.href='popularBoard'"><p>인기글 게시판</p></div>
+			<div class="list_detail" onclick="location.href='freeBoard'"><p>자유 게시판</p></div>
+			<div class="list_detail" onclick="location.href='socialBoard'"><p>사회</p></div>
+			<div class="list_detail" onclick="location.href='entertainmentsBoard'"><p>연예</p></div>
+			<div class="list_detail" onclick="location.href='sportsBoard'"><p>스포츠</p></div>
+			<div class="list_detail" onclick="location.href='ITBoard'"><p>IT</p></div>
+			<div class="list_detail" onclick="location.href='gameBoard'"><p>게임</p></div>
+			<div class="list_detail" onclick="location.href='shoppingBoard'"><p>쇼핑</p></div>
 		</div>
 	</div>
 </body>

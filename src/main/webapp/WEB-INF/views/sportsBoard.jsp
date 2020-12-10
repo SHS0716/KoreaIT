@@ -24,7 +24,7 @@
 <body>
 
 <table width="1000" align="center" border="1" cellpadding="5" cellspacing="0">
-	<tr><th colspan="5">인기글 게시판</th></tr>
+	<tr><th colspan="5">스포츠 게시판</th></tr>
 	<tr>
 		<td colspan="5" align="right">
 			${boardList.totalCount}(${boardList.currentPage} / ${boardList.totalPage})Page
@@ -50,29 +50,14 @@
 	</c:if>
 	
 	<c:if test="${list.size() != 0}">	
-	<c:forEach var="vo" items="${list}">
+	<c:forEach var="vo" items="${list}" varStatus="status">
 	<tr>
 		<td align="center">
-<%--  		<c:set value="idx" value="1"/>
-			<c:forEach var=""></c:forEach>
-			${idx} --%>
-			
-			
-			${boardList.totalCount}
+			${boardList.totalCount - ((boardList.currentPage - 1) * boardList.pageSize + status.index)}		<!-- jstl을 이용한 페이지 글 번호 -->
 		</td>
 		<td>
 			<c:set var="subject" value="${fn:replace(fn:trim(vo.subject), '<', '&lt;')}"/>
 			<c:set var="subject" value="${fn:replace(subject, '>', '&gt;')}"/>
-			
-			
-<%-- 			<c:if test="${vo.lev > 0}">
-			<c:forEach var="i" begin="1" end="${vo.lev}" step="1">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			</c:forEach>
-			Re&nbsp;
-			</c:if> --%>
-			
-			
 			<a href="increment?idx=${vo.bidx}&currentPage=${boardList.currentPage}">${subject}</a>
 			
 			<!-- 조회수가 10번을 넘어가면 hot을 표시한다. -->

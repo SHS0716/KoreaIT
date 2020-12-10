@@ -19,15 +19,15 @@
 
 <div id="login">
 	<h2>코리아IT 커뮤니티</h2>
-	<form action="loginOK" method="post">
+	<form action="loginCheck" method="post">
 		ID : <input type="text" name="id" placeholder="ID"/><br>
-		PW : <input type="text" name="id" placeholder="PASSWORD"/><br>
+		PW : <input type="text" name="password" placeholder="PASSWORD"/><br>
 		<div id="in">
 			<table>
 				<tr>
 					<td>
 						<input type="submit" value="로그인"/>
-						<input type="button" value="회원가입" onclick="location.href='join'"/>
+						<input type="button" value="회원가입" onclick="location.href='insert'"/>
 					</td>
 				</tr>
 				<tr>

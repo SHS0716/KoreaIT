@@ -53,9 +53,11 @@
 	<c:forEach var="vo" items="${list}">
 	<tr>
 		<td align="center">
-<%-- 			<c:set value="idx" value="1"/>
+<%--  		<c:set value="idx" value="1"/>
 			<c:forEach var=""></c:forEach>
 			${idx} --%>
+			
+			
 			${boardList.totalCount}
 		</td>
 		<td>
