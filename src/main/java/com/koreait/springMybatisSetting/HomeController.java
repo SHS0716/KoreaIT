@@ -21,6 +21,7 @@ import com.koreait.vo.BoardVO;
 import com.koreait.vo.InterestVO;
 import com.koreait.vo.MemberVO;
 
+
 @Controller
 public class HomeController {
 	
